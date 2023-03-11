@@ -23,11 +23,11 @@
 
    - An attacker uses ARP sppofing to intercept network traffic in a way that he presents himself as an entity whose MAC address he found out, so the whole communication is redirected over an attacker and he can supervise it.
 
-4. How is the cookie used to derive the encryption/decryption key?
+4. How is the _cookie_ used to derive the encryption/decryption key?
 
-   - The encryption/decription key is dervied from the secret value which is called the cookie. From the cookie we find out the key and decript the challenge.
+   - The encryption/decription key is dervied from the secret value which is called the _cookie_. From the _cookie_ we find out the key and decript the challenge.
 
-5. What REST API request do you need to send to the crypto oracle to get the secret cookie?
+5. What REST API request do you need to send to the crypto oracle to get the secret \_cookie:?
 
    - GET /arp/cookie
 
@@ -35,9 +35,9 @@
 
    - The authentication token is obtained by requesting it from the _crypto oracle_ server. We also have to authenticate by sending username and password.
 
-7. How do you use the authentication token to obtain the cookie?
+7. How do you use the authentication token to obtain the _cookie_?
 
-   - The authentication token is used when sending a REST API request, in whose reply we get the cookie, to the _crypto oracle_ server which
+   - The authentication token is used when sending a REST API request in whose reply we get the _cookie_, because without the _cookie_ sending a request wouldn't be successfull.
 
 8. What encryption mode is used to encrypt the challenge in this lab?
 
